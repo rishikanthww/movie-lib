@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Website</title>
+    <!-- Font Awesome icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Logo -->
+        <div class="logo">
+            <div class="container">
+                <br/>
+                <p class="logo-container" ><a href="home.html"><span style="color:white">Movie</span><span> Library</span></a></p>
+               
+                    <button id="public-playlist" style="background-color: #4c78bf; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;">Public List</button>
+                |
+                <button id="private-playlist" style="background-color: #4c78bf; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;">Private List</button><form id="logout-form" action="/logout" method="POST">
+                    <button type="submit">Logout</button>
+                </form>
+                
+            </div>
+        </div>
+        <!-- End of logo -->
+        <!-- Search container -->
+        <div class="search-container">
+            <div class="search-element">
+                <h3>Search Movie:</h3>
+                <input type="text" class="form-control" placeholder="Search Movie Title ..." id="movie-search-box">
+                <button id="search-button">search</button>
+                <div class="search-list hide-search-list" id="search-list"></div>
+            </div>
+        </div>
+        <!-- End of search container -->
+        <!-- Result container -->
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
